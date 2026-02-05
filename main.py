@@ -10,9 +10,10 @@ API_KEY = "guvi-honeypot-key"
 def root():
     return {"status": "Agentic Honeypot running"}
 
-
 @app.get("/analyze")
 @app.post("/analyze")
+@app.get("/analyze/")
+@app.post("/analyze/")
 def analyze(x_api_key: Optional[str] = Header(None)):
     if x_api_key != API_KEY:
         raise HTTPException(status_code=401, detail="Invalid API Key")
