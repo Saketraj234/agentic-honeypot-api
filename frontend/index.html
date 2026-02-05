@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Agentic HoneyPot – Scam Detection</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+<div class="dashboard">
+
+  <!-- LEFT PANEL -->
+  <aside class="left-panel">
+    <h1>🛡️ Agentic<br>HoneyPot</h1>
+    <p class="subtitle">
+      Autonomous AI system that traps scammers<br>
+      and extracts intelligence
+    </p>
+
+    <div class="status">● System Active</div>
+
+    <div class="card">
+      <h3>🚨 Scam Intelligence</h3>
+      <p><b>UPI IDs:</b> <span id="upi">None</span></p>
+      <p><b>Bank Accounts:</b> <span id="bank">None</span></p>
+      <p><b>Phishing Links:</b> <span id="links">None</span></p>
+    </div>
+
+    <div class="card">
+      <h3>🤖 AI Agent Capabilities</h3>
+      <ul>
+        <li>Context-aware scam conversation</li>
+        <li>Human-like delayed replies</li>
+        <li>Multi-turn manipulation resistance</li>
+        <li>Live pattern extraction</li>
+        <li>Adaptive response strategy</li>
+      </ul>
+    </div>
+
+    <div class="card">
+      <h3>🔐 Safety & Ethics</h3>
+      <ul>
+        <li>No real user data used</li>
+        <li>Simulated honeypot environment</li>
+        <li>No real transactions allowed</li>
+        <li>All links disabled</li>
+        <li>Educational & research only</li>
+      </ul>
+    </div>
+  </aside>
+
+  <!-- RIGHT PANEL -->
+  <main class="right-panel">
+    <header class="chat-header">💬 Scam Engagement Console</header>
+
+    <div id="chatBox" class="chat-box">
+      <div class="hint">Waiting for scammer message…</div>
+    </div>
+
+    <div class="chat-input">
+      <input id="messageInput" placeholder="Type scammer message..." />
+      <button onclick="sendMessage()">Send</button>
+    </div>
+  </main>
+
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
