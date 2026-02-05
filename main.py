@@ -5,15 +5,15 @@ app = FastAPI()
 
 API_KEY = "guvi-honeypot-key"
 
+
 @app.get("/")
 def root():
     return {"status": "Agentic Honeypot running"}
 
-# ✅ GET + POST dono allow
+
 @app.get("/analyze")
 @app.post("/analyze")
 def analyze(x_api_key: Optional[str] = Header(None)):
-    # API key check
     if x_api_key != API_KEY:
         raise HTTPException(status_code=401, detail="Invalid API Key")
 
